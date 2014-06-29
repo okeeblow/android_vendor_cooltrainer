@@ -59,6 +59,5 @@ fetch 'http://fbreader.org/files/android/FBReaderJ_ice-cream-sandwich.apk'
 fetch 'https://f-droid.org/repo/org.birthdayadapter_18.apk'
 fetch 'https://f-droid.org/repo/at.bitfire.davdroid_37.apk'
 fetch 'https://f-droid.org/repo/eu.siacs.conversations_16.apk'
-fetch 'http://dev-builds.libreoffice.org/daily/master/Android-ARM@24-Bytemark-Hosting/current/master~2014-06-28_05.28.09_LibreOffice4Android-debug.apk' 'libreoffice'
 
 echo >> config/fetched_packages.mk
