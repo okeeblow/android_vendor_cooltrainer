@@ -21,10 +21,44 @@ PRODUCT_PROPERTY_OVERRIDES += \
   persist.sys.dalvik.vm.lib=libart.so
 
 PRODUCT_COPY_FILES += \
-  vendor/cooltrainer/prebuilt/bin/sysinit:system/bin/sysinit \
   vendor/cooltrainer/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
   vendor/cooltrainer/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
   vendor/cooltrainer/prebuilt/etc/init.local.rc:root/init.cooltrainer.rc \
+  vendor/cooltrainer/prebuilt/bin/50-hosts.sh:system/addon.d/50-hosts.sh \
+  vendor/cooltrainer/prebuilt/bin/blacklist:system/addon.d/blacklist
+
+# init.d support
+PRODUCT_COPY_FILES += \
+  vendor/cooltrainer/prebuilt/bin/sysinit:system/bin/sysinit \
+  vendor/cooltrainer/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner \
+  vendor/cooltrainer/prebuilt/etc/init.d/00check:system/etc/init.d/00check \
+  vendor/cooltrainer/prebuilt/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
+  vendor/cooltrainer/prebuilt/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
+  vendor/cooltrainer/prebuilt/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+  vendor/cooltrainer/prebuilt/etc/init.d/05freemem:system/etc/init.d/05freemem \
+  vendor/cooltrainer/prebuilt/etc/init.d/06removecache:system/etc/init.d/06removecache \
+  vendor/cooltrainer/prebuilt/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
+  vendor/cooltrainer/prebuilt/etc/init.d/09cron:system/etc/init.d/09cron \
+  vendor/cooltrainer/prebuilt/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
+  vendor/cooltrainer/prebuilt/etc/init.d/11battery:system/etc/init.d/11battery \
+  vendor/cooltrainer/prebuilt/etc/init.d/12touch:system/etc/init.d/12touch \
+  vendor/cooltrainer/prebuilt/etc/init.d/13minfree:system/etc/init.d/13minfree \
+  vendor/cooltrainer/prebuilt/etc/init.d/14gpurender:system/etc/init.d/14gpurender \
+  vendor/cooltrainer/prebuilt/etc/init.d/15sleepers:system/etc/init.d/15sleepers \
+  vendor/cooltrainer/prebuilt/etc/init.d/16journalism:system/etc/init.d/16journalism \
+  vendor/cooltrainer/prebuilt/etc/init.d/17sqlite3:system/etc/init.d/17sqlite3 \
+  vendor/cooltrainer/prebuilt/etc/init.d/18wifisleep:system/etc/init.d/18wifisleep \
+  vendor/cooltrainer/prebuilt/etc/init.d/19iostats:system/etc/init.d/19iostats \
+  vendor/cooltrainer/prebuilt/etc/init.d/20setrenice:system/etc/init.d/20setrenice \
+  vendor/cooltrainer/prebuilt/etc/init.d/21tweaks:system/etc/init.d/21tweaks \
+  vendor/cooltrainer/prebuilt/etc/init.d/24speedy_modified:system/etc/init.d/24speedy_modified \
+  vendor/cooltrainer/prebuilt/etc/init.d/25loopy_smoothness_tweak:system/etc/init.d/25loopy_smoothness_tweak \
+  vendor/cooltrainer/prebuilt/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+  vendor/cooltrainer/prebuilt/etc/helpers.sh:system/etc/helpers.sh \
+  vendor/cooltrainer/prebuilt/etc/sysctl.conf:system/etc/sysctl.conf \
+  vendor/cooltrainer/prebuilt/etc/init.d.cfg:system/etc/init.d.cfg
+
+PRODUCT_COPY_FILES += \
   vendor/cooltrainer/prebuilt/system/org.mozilla.firefox/distribution/preferences.json:system/org.mozilla.firefox/distribution/preferences.json \
   vendor/cooltrainer/prebuilt/system/org.mozilla.firefox/distribution/searchplugins/common/duckduckgo.xml:system/org.mozilla.firefox/distribution/searchplugins/common/duckduckgo.xml \
   vendor/cooltrainer/prebuilt/system/org.mozilla.firefox/distribution/searchplugins/common/list.txt:system/org.mozilla.firefox/distribution/searchplugins/common/list.txt \
