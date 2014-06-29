@@ -4,6 +4,10 @@ PRODUCT_BRAND ?= cooltrainer
 
 BUILD_WITH_COLORS := 1
 
+# bootanimations
+PRODUCT_COPY_FILES += \
+  vendor/cooltrainer/bootanimations/bootanimation.zip:system/media/bootanimation.zip
+
 PRODUCT_PROPERTY_OVERRIDES += \
   keyguard.no_require_sim=true \
   ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
