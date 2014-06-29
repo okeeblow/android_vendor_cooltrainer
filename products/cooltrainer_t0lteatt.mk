@@ -1,4 +1,4 @@
-$(call inherit-product, device/samsung/maguro/full_maguro.mk)
+$(call inherit-product, device/samsung/t0lteatt/full_t0lteatt.mk)
 $(call inherit-product, vendor/cooltrainer/config/common.mk)
 $(call inherit-product, vendor/cooltrainer/config/gsm.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
@@ -6,10 +6,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
 TARGET_ARCH := arm
 ARGET_ARCH_VARIANT := armv7-a-neon
 
-PRODUCT_NAME  := cooltrainer_maguro
+PRODUCT_NAME  := cooltrainer_t0lteatt
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := CoolROM on Maguro
-PRODUCT_DEVICE := maguro
+PRODUCT_MODEL := CoolROM on t0lteatt
+PRODUCT_DEVICE := t0lteatt
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -18,6 +18,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_BUILD_PROP_OVERRIDES := \
   PRODUCT_NAME=yakju \
-  BUILD_FINGERPRINT=google/yakju/maguro:4.3/JWR66Y/776638:user/release-keys \
+  BUILD_FINGERPRINT=google/yakju/t0lteatt:4.3/JWR66Y/776638:user/release-keys \
   PRIVATE_BUILD_DESC="yakju-user 4.3 JWR66Y 776638 release-keys"
 
