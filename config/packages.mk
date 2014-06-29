@@ -1,26 +1,13 @@
+# Extras
 PRODUCT_PACKAGES += \
-  bash \
-  e2fsck \
-  fsck.exfat \
-  htop \
-  lsof \
-  mke2fs \
-  mkfs.exfat \
-  mount.exfat \
-  nano \
-  openvpn \
-  powertop \
   su \
-  tune2fs \
-  vim \
   CMFileManager \
-  OmniTorch \
-  OpenDelta \
-  Apollo \
-  Superuser \
+  Superuser
+
+# microg
+PRODUCT_PACKAGES += \
   NetworkLocation \
   GSMLocation \
-  FakeStore \
   UnifiedNlpApi \
   com.google.android.maps \
   com.google.android.maps.xml \
