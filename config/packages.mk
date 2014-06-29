@@ -32,5 +32,5 @@ PRODUCT_PACKAGES += \
 # looks like it's available on all devices
 PRODUCT_PACKAGES += libmemtrack
 
--include vendor/gfreed/config/fetched_packages.mk
+-include vendor/cooltrainer/config/fetched_packages.mk
 

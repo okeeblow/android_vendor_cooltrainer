@@ -1,7 +1,7 @@
 TARGET_PRODUCT_SHORT := $(TARGET_PRODUCT)
-TARGET_PRODUCT_SHORT := $(subst gfreed_,,$(TARGET_PRODUCT_SHORT))
+TARGET_PRODUCT_SHORT := $(subst cooltrainer_,,$(TARGET_PRODUCT_SHORT))
 
 ROM_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d-%H%M%z)-$(TARGET_PRODUCT_SHORT)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.modversion=GfreeD-$(ROM_VERSION)
+  ro.modversion=Cooltrainer-$(ROM_VERSION)

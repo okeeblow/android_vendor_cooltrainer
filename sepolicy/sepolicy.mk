@@ -1,5 +1,5 @@
 BOARD_SEPOLICY_DIRS += \
-  vendor/gfreed/sepolicy
+  vendor/cooltrainer/sepolicy
 
 BOARD_SEPOLICY_UNION += \
   file_contexts \

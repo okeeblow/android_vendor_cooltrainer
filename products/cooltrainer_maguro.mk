@@ -1,14 +1,14 @@
 $(call inherit-product, device/samsung/maguro/full_maguro.mk)
-$(call inherit-product, vendor/gfreed/config/common.mk)
-$(call inherit-product, vendor/gfreed/config/gsm.mk)
+$(call inherit-product, vendor/cooltrainer/config/common.mk)
+$(call inherit-product, vendor/cooltrainer/config/gsm.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
 
 TARGET_ARCH := arm
 ARGET_ARCH_VARIANT := armv7-a-neon
 
-PRODUCT_NAME  := gfreed_maguro
+PRODUCT_NAME  := cooltrainer_maguro
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := Gfreed on Maguro
+PRODUCT_MODEL := CoolROM on Maguro
 PRODUCT_DEVICE := maguro
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
