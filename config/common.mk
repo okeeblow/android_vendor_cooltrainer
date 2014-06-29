@@ -58,6 +58,26 @@ PRODUCT_COPY_FILES += \
   vendor/cooltrainer/prebuilt/etc/sysctl.conf:system/etc/sysctl.conf \
   vendor/cooltrainer/prebuilt/etc/init.d.cfg:system/etc/init.d.cfg
 
+# userinit support
+PRODUCT_COPY_FILES += \
+  vendor/cooltrainer/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
+
+# Init script file with DU extras
+PRODUCT_COPY_FILES += \
+  vendor/cooltrainer/prebuilt/etc/init.local.rc:root/init.du.rc
+
+# Enable SIP and VoIP on all targets
+PRODUCT_COPY_FILES += \
+  frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+
+# T-Mobile theme engine
+include vendor/cooltrainer/configs/themes_common.mk
+
+# HFM Files
+PRODUCT_COPY_FILES += \
+  vendor/cooltrainer/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
+  vendor/cooltrainer/prebuilt/etc/hosts.og:system/etc/hosts.og
+
 PRODUCT_COPY_FILES += \
   vendor/cooltrainer/prebuilt/system/org.mozilla.firefox/distribution/preferences.json:system/org.mozilla.firefox/distribution/preferences.json \
   vendor/cooltrainer/prebuilt/system/org.mozilla.firefox/distribution/searchplugins/common/duckduckgo.xml:system/org.mozilla.firefox/distribution/searchplugins/common/duckduckgo.xml \
