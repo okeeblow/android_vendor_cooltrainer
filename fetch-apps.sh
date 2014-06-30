@@ -54,10 +54,5 @@ fi
 
 
 fetch 'https://f-droid.org/FDroid.apk' 'fdroid' 'priv'
-fetch 'http://nightlies.csipsimple.com/armeabi-v7a/CSipSimple-latest-armeabi-v7a.apk'
-fetch 'http://fbreader.org/files/android/FBReaderJ_ice-cream-sandwich.apk'
-fetch 'https://f-droid.org/repo/org.birthdayadapter_18.apk'
-fetch 'https://f-droid.org/repo/at.bitfire.davdroid_37.apk'
-fetch 'https://f-droid.org/repo/eu.siacs.conversations_16.apk'
 
 echo >> config/fetched_packages.mk
