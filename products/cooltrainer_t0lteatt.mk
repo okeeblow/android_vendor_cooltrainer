@@ -19,8 +19,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.bq.gpu_to_cpu_unsupported=1 \
   ro.zygote.disable_gl_preload=true
 
-PRODUCT_BUILD_PROP_OVERRIDES := \
-  PRODUCT_NAME=yakju \
-  BUILD_FINGERPRINT=google/yakju/t0lteatt:4.3/JWR66Y/776638:user/release-keys \
-  PRIVATE_BUILD_DESC="yakju-user 4.3 JWR66Y 776638 release-keys"
-
