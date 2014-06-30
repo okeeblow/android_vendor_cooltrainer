@@ -211,11 +211,11 @@ echo -e $CL_RED"                       888  .d88P   Y88b. .d88P                 
 echo -e $CL_RED"                       8888888P      Y888888PY                                     " $CL_RST
 echo -e
 echo -e
-echo -e $CL_RED"====================== Dirty Unicorns complete ====================================="$CL_RST
+echo -e $CL_RED"=========================== Build Complete ========================================="$CL_RST
 echo -e $CL_RED"| ZIP:"$CL_RED" $OUTFILE                                                            "$CL_RST
 echo -e $CL_RED"| MD5:"$CL_RED" $(cat $img.md5sum | awk '{ print $1 }')                             "$CL_RST
 echo -e $CL_RED"| SIZE:"$CL_RED" $ZIPSIZE                                                           "$CL_RST
-echo -e $CL_RED"======================== Now flash that shit ======================================="$CL_RST
+echo -e $CL_RED"======================== Good luck flashing :) ====================================="$CL_RST
 echo -e
 )
 
