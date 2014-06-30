@@ -43,6 +43,8 @@ PRODUCT_PACKAGES += \
 
 # Additional tools
 PRODUCT_PACKAGES += \
+  zip \
+  unrar \
   openvpn \
   e2fsck \
   mke2fs \
