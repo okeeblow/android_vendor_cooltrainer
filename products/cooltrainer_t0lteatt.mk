@@ -14,6 +14,7 @@ PRODUCT_DEVICE := t0lteatt
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412-agni
+TARGET_KERNEL_CONFIG := psn_n7105_v2.8.1_wolfson_defconfig
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.bq.gpu_to_cpu_unsupported=1 \
