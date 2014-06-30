@@ -1,4 +1,5 @@
-SUPERUSER_EMBEDDED := true
+SUPERUSER_EMBEDDED := false
+SUPERUSER_PACKAGE := org.cooltrainer.superuser
 
 PRODUCT_BRAND := Cooltrainer
 
