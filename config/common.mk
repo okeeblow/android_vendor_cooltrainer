@@ -1,6 +1,6 @@
 SUPERUSER_EMBEDDED := true
 
-PRODUCT_BRAND ?= cooltrainer
+PRODUCT_BRAND := Cooltrainer
 
 BUILD_WITH_COLORS := 1
 
@@ -94,6 +94,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cooltrainer/overlay/common
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
+
+TARGET_CUSTOM_RELEASETOOL := $(ANDROID_BUILD_TOP)/vendor/cooltrainer/tools/squisher
 
 -include vendor/cooltrainer/config/packages.mk
 
