@@ -1,7 +1,9 @@
 TARGET_PRODUCT_SHORT := $(TARGET_PRODUCT)
 TARGET_PRODUCT_SHORT := $(subst cooltrainer_,,$(TARGET_PRODUCT_SHORT))
 
-ROM_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d-%H%M%z)-$(TARGET_PRODUCT_SHORT)
+DATE = $(shell date +%Y%m%d-%H%M%z)
+ROM_VERSION := $(PLATFORM_VERSION)-$(DATE)-$(TARGET_PRODUCT_SHORT)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.modversion=Cooltrainer-$(ROM_VERSION)
+  ro.modversion=Cooltrainer-$(ROM_VERSION) \
+  ro.du.version=$(TARGET_PRODUCT)_$(ANDROID_VERSION)_$(DATE)
