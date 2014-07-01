@@ -1,3 +1,6 @@
+# Superuser
+PRODUCT_COPY_FILES += \
+  external/koush/Superuser/init.superuser.rc:root/init.superuser.rc
 SUPERUSER_PACKAGE := org.cooltrainer.superuser
 
 PRODUCT_BRAND := Cooltrainer
