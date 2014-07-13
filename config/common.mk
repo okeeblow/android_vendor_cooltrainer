@@ -1,7 +1,9 @@
 # Superuser
 PRODUCT_COPY_FILES += \
-  external/koush/Superuser/init.superuser.rc:root/init.superuser.rc
-SUPERUSER_PACKAGE := org.cooltrainer.superuser
+  vendor/cooltrainer/prebuilt/bin/su:system/xbin/daemonsu \
+  vendor/cooltrainer/prebuilt/bin/su:system/xbin/su \
+  vendor/cooltrainer/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+  vendor/cooltrainer/prebuilt/apk/Superuser.apk:system/app/Superuser.apk
 
 PRODUCT_BRAND := Cooltrainer
 
