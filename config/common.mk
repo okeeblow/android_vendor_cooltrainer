@@ -75,7 +75,7 @@ PRODUCT_COPY_FILES += \
   frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # T-Mobile theme engine
-include vendor/cooltrainer/configs/themes_common.mk
+include vendor/cooltrainer/config/themes_common.mk
 
 # HFM Files
 PRODUCT_COPY_FILES += \
