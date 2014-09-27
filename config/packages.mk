@@ -13,7 +13,10 @@ PRODUCT_PACKAGES += \
   com.google.android.maps.xml \
   FusedLocation \
   GmsCore \
-  FakeStore
+  FakeStore \
+  GoogleLoginService \
+  JGoogle \
+  JGooglePlay
 
 # Additional packages
 PRODUCT_PACKAGES += \
